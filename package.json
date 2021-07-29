@@ -1,0 +1,50 @@
+{
+  "name": "esspn",
+  "private": true,
+  "scripts": {
+    "start": "set MONGO_URL=mongodb+srv://admin:admin@esspn.alevy.mongodb.net/esspn && meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "antd": "^4.11.2",
+    "bcrypt": "^5.0.0",
+    "express": "^4.17.1",
+    "history": "^5.0.0",
+    "meteor-node-stubs": "^1.0.1",
+    "react": "^16.13.1",
+    "react-big-calendar": "^0.33.5",
+    "react-dom": "^16.13.1",
+    "react-event-calendar": "^0.3.0",
+    "react-router-dom": "^5.2.0",
+    "react-tackle": "^3.7.3",
+    "react-tackle-box": "^2.1.0",
+    "simpl-schema": "^1.10.2",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/meteor": "^1.4.49",
+    "@types/mocha": "^8.0.3",
+    "@types/react": "^16.9.49",
+    "@types/react-big-calendar": "^0.31.4",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.7",
+    "cross-env": "^7.0.3",
+    "prettier": "2.2.1",
+    "typescript": "^4.0.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.tsx",
+      "server": "server/main.ts"
+    },
+    "testModule": "tests/main.ts"
+  }
+}

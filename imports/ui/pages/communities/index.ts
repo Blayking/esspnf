@@ -1,0 +1,1 @@
+export { CommunitiesContainer } from './communities.container';

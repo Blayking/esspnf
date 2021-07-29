@@ -1,0 +1,9 @@
+export { HomeContainer } from './home';
+export { LoginContainer } from './login';
+export { RegisterContainer } from './register';
+export { CommunitiesContainer } from './communities';
+export { CommunityContainer } from './community';
+export { EditCommunityContainer } from './edit-community';
+export { ProfileContainer } from './profile';
+export { ProductsContainer } from './products';
+export { EventsContainer } from './events';
